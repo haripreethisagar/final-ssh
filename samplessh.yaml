@@ -7,5 +7,5 @@
        from_secret: password
     port: 22
     script:
-      - echo hello
+      - echo helloo
       - echo world
