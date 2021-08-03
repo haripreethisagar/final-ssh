@@ -1,16 +1,17 @@
 kind: pipeline
-type: ssh
 name: default
-
 steps:
-- name: ssh commands
+- name: ssh
   image: appleboy/drone-ssh
   settings:
-    host: 52.255.156.219
-    username: haripreethi
+    host: 
+      from_secret: ssh_host
+    username: 
+      from_secret: ssh_username
     password: 
-       from_secret: password
-    port: 22
+      from_secret: ssh_password
+    port: 
+      from_secret: ssh_port
     script:
-      - echo helloo
-      - echo worldd
+      - echo "hello"
+      - echo "deploy"
