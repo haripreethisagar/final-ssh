@@ -1,16 +1,19 @@
----
+--- 
 kind: pipeline
-type: ssh
 name: default
-
-server:
-  host: 
-      from_secret: ssh_host
-  username: 
-      from_secret: ssh_username
-  password:
-      from_secret: ssh_password
- steps:
-- name: greeting
-  commands:
-  - echo hello worldd
+steps: 
+  - 
+    image: appleboy/drone-ssh
+    name: ssh
+    settings: 
+      host: 
+        from_secret: ssh_host
+      key: 
+        from_secret: ssh_key
+      port: 
+        from_secret: ssh_port
+      script: 
+        - "echo \"hello\""
+        - "echo \"deploy\""
+      username: 
+        from_secret: ssh_username
