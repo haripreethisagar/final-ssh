@@ -4,8 +4,8 @@ type: ssh
 name: default
 
 server:
-  host: 1.2.3.4
-  user: root
+  host: 52.255.156.219
+  user: haripreethi
   password:
     from_secret: password
 
