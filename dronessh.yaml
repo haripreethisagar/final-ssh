@@ -8,12 +8,13 @@ steps:
     settings: 
       host: 
         from_secret: ssh_host
-      password: 
+      username: 
+        from_secret: ssh_username
+      password:
         from_secret: ssh_password
       port: 
         from_secret: ssh_port
       script: 
         - "echo \"hello\""
         - "echo \"deploy\""
-      username: 
-        from_secret: ssh_username
+
