@@ -1,0 +1,11 @@
+- name: ssh commands
+  image: appleboy/drone-ssh
+  settings:
+    host: 52.255.156.219
+    username: haripreethi
+    password: 
+       from_secret: password
+    port: 22
+    script:
+      - echo hello
+      - echo world
