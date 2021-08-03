@@ -8,6 +8,8 @@ steps:
     settings: 
       host: 
         from_secret: ssh_host
+      password: 
+        from_secret: ssh_password
       port: 
         from_secret: ssh_port
       script: 
