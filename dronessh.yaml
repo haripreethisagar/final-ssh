@@ -11,7 +11,9 @@ server:
 steps:
 - name: greeting
   commands:
-  - mkdir /abc/def
+  - sudo su -
+  - whoami
+  - npm install
   
 
 ...
