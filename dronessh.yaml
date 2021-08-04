@@ -5,8 +5,8 @@ name: default
 image: appleboy/drone-ssh
 server:
   host: 52.255.156.219
-  username: haripreethi
-  password: 
+  user: haripreethi
+  password:
     from_secret: ssh_password
 steps:
 - name: greeting
