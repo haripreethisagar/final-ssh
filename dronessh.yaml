@@ -11,8 +11,8 @@ server:
 steps:
 - name: greeting
   commands:
-  - mkdir /abc/def/efg
-  - echo "hello"
+  - npm install
+  - npm test
 
 ...
 
