@@ -11,8 +11,8 @@ server:
 steps:
 - name: greeting
   commands:
-  - yum install npm
-  - yum test npm
+  - mkdir /abc/def
+  
 
 ...
 
