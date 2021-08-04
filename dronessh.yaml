@@ -15,6 +15,6 @@ steps:
       port: 
         from_secret: ssh_port
       script: 
-        - "echo \"hello\""
+        - "echo \"helllo\""
         - "echo \"deploy\""
 
