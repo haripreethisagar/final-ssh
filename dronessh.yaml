@@ -11,10 +11,7 @@ server:
 steps:
 - name: greeting
   commands:
-  - sudo su -
-  - whoami
-  - npm install
-  
+  - "echo hello world"
 
 ...
 
