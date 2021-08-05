@@ -4,7 +4,7 @@ type: ssh
 name: default
 image: appleboy/drone-ssh
 server:
-  host: 13.72.118.59
+  host: 13.66.184.254
   user: haripreethi
   password:
     from_secret: ssh_password
