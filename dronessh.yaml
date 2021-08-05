@@ -11,7 +11,7 @@ server:
 steps:
 - name: greeting
   commands:
-  - "echo hello worlld"
+  - "echo hello world"
 
 ...
 
